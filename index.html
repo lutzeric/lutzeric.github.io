@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Store</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-purple-600 to-pink-500 text-white p-4 shadow-lg rounded-b-lg">
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center px-4">
+            <h1 class="text-3xl font-bold mb-2 sm:mb-0">My Awesome Store</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:text-purple-200 transition duration-300">Home</a></li>
+                    <li><a href="#" class="hover:text-purple-200 transition duration-300">Shop</a></li>
+                    <li><a href="#" class="hover:text-purple-200 transition duration-300">About</a></li>
+                    <li><a href="#" class="hover:text-purple-200 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content - Product Grid -->
+    <main class="container mx-auto my-8 p-4">
+        <h2 class="text-4xl font-extrabold text-center mb-10 text-purple-700">Featured Products</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Product Card 1 -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden">
+                <img src="https://placehold.co/600x400/80B3FF/FFFFFF?text=Product+1"
+                     alt="Product 1"
+                     class="w-full h-48 object-cover rounded-t-xl"
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/CCCCCC/000000?text=Image+Not+Found';">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold mb-2 text-purple-800">Stylish Gadget Pro</h3>
+                    <p class="text-gray-600 mb-4 line-clamp-3">
+                        Experience cutting-edge technology with this sleek and powerful gadget. Perfect for work and play.
+                        It boasts a long-lasting battery and an intuitive user interface.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-3xl font-bold text-green-600">$99.99</span>
+                        <button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-full shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden">
+                <img src="https://placehold.co/600x400/FFB380/FFFFFF?text=Product+2"
+                     alt="Product 2"
+                     class="w-full h-48 object-cover rounded-t-xl"
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/CCCCCC/000000?text=Image+Not+Found';">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold mb-2 text-purple-800">Cozy Comfort Blanket</h3>
+                    <p class="text-gray-600 mb-4 line-clamp-3">
+                        Wrap yourself in ultimate softness with our premium comfort blanket. Ideal for chilly evenings.
+                        Made from 100% organic cotton for a luxurious feel.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-3xl font-bold text-green-600">$45.00</span>
+                        <button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-full shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden">
+                <img src="https://placehold.co/600x400/80FFB3/FFFFFF?text=Product+3"
+                     alt="Product 3"
+                     class="w-full h-48 object-cover rounded-t-xl"
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/CCCCCC/000000?text=Image+Not+Found';">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold mb-2 text-purple-800">Adventure Backpack</h3>
+                    <p class="text-gray-600 mb-4 line-clamp-3">
+                        Your perfect companion for outdoor adventures. Durable, spacious, and comfortable.
+                        Features multiple compartments and water-resistant material.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-3xl font-bold text-green-600">$79.95</span>
+                        <button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-full shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden">
+                <img src="https://placehold.co/600x400/B380FF/FFFFFF?text=Product+4"
+                     alt="Product 4"
+                     class="w-full h-48 object-cover rounded-t-xl"
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/CCCCCC/000000?text=Image+Not+Found';">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold mb-2 text-purple-800">Gourmet Coffee Beans</h3>
+                    <p class="text-gray-600 mb-4 line-clamp-3">
+                        Start your day with the rich aroma of our freshly roasted gourmet coffee beans.
+                        Ethically sourced and perfectly ground for your convenience.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-3xl font-bold text-green-600">$18.50</span>
+                        <button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-full shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 5 -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden">
+                <img src="https://placehold.co/600x400/FF80B3/FFFFFF?text=Product+5"
+                     alt="Product 5"
+                     class="w-full h-48 object-cover rounded-t-xl"
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/CCCCCC/000000?text=Image+Not+Found';">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold mb-2 text-purple-800">Handcrafted Ceramic Mug</h3>
+                    <p class="text-gray-600 mb-4 line-clamp-3">
+                        Enjoy your favorite beverage in this unique, handcrafted ceramic mug.
+                        Each mug is individually made, ensuring a one-of-a-kind piece.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-3xl font-bold text-green-600">$22.00</span>
+                        <button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-full shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 6 -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden">
+                <img src="https://placehold.co/600x400/B3FF80/FFFFFF?text=Product+6"
+                     alt="Product 6"
+                     class="w-full h-48 object-cover rounded-t-xl"
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/CCCCCC/000000?text=Image+Not+Found';">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold mb-2 text-purple-800">Smart Home Assistant</h3>
+                    <p class="text-gray-600 mb-4 line-clamp-3">
+                        Control your home with just your voice. Our smart assistant makes life easier.
+                        Integrates seamlessly with all your smart devices.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-3xl font-bold text-green-600">$129.00</span>
+                        <button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-full shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-6 mt-10 rounded-t-lg">
+        <div class="container mx-auto text-center px-4">
+            <p>&copy; 2025 Venta de garage.</p>
+            <p class="mt-2">
+                <a href="#" class="text-purple-400 hover:text-purple-300 transition duration-300">Privacy Policy</a> |
+                <a href="#" class="text-purple-400 hover:text-purple-300 transition duration-300">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
