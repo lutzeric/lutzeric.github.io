@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Gadget Pro - Product Details</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header (reused from index.html for consistency) -->
+    <header class="bg-gradient-to-r from-purple-600 to-pink-500 text-white p-4 shadow-lg rounded-b-lg">
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center px-4">
+            <h1 class="text-3xl font-bold mb-2 sm:mb-0">My Awesome Store</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:text-purple-200 transition duration-300">Home</a></li>
+                    <li><a href="#" class="hover:text-purple-200 transition duration-300">Shop</a></li>
+                    <li><a href="#" class="hover:text-purple-200 transition duration-300">About</a></li>
+                    <li><a href="#" class="hover:text-purple-200 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content - Product Detail -->
+    <main class="container mx-auto my-8 p-4 bg-white rounded-xl shadow-lg">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Product Images Gallery -->
+            <div class="flex flex-col items-center">
+                <img src="IMG_20250811_111317385.jpg"
+                     alt="Stylish Gadget Pro Main Image"
+                     class="w-full max-w-md h-auto rounded-xl shadow-md mb-4 object-cover"
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/CCCCCC/000000?text=Main+Image+Not+Found';">
+                <div class="flex space-x-2 overflow-x-auto w-full max-w-md">
+                    <img src="https://placehold.co/100x100/A0A0A0/FFFFFF?text=View+1"
+                         alt="Product View 1"
+                         class="w-24 h-24 object-cover rounded-md cursor-pointer hover:border-2 hover:border-purple-500 transition duration-150"
+                         onerror="this.onerror=null; this.src='https://placehold.co/100x100/BBBBBB/000000?text=Error';">
+                    <img src="https://placehold.co/100x100/C0C0C0/FFFFFF?text=View+2"
+                         alt="Product View 2"
+                         class="w-24 h-24 object-cover rounded-md cursor-pointer hover:border-2 hover:border-purple-500 transition duration-150"
+                         onerror="this.onerror=null; this.src='https://placehold.co/100x100/BBBBBB/000000?text=Error';">
+                    <img src="https://placehold.co/100x100/D0D0D0/FFFFFF?text=View+3"
+                         alt="Product View 3"
+                         class="w-24 h-24 object-cover rounded-md cursor-pointer hover:border-2 hover:border-purple-500 transition duration-150"
+                         onerror="this.onerror=null; this.src='https://placehold.co/100x100/BBBBBB/000000?text=Error';">
+                     <img src="https://placehold.co/100x100/E0E0E0/FFFFFF?text=View+4"
+                         alt="Product View 4"
+                         class="w-24 h-24 object-cover rounded-md cursor-pointer hover:border-2 hover:border-purple-500 transition duration-150"
+                         onerror="this.onerror=null; this.src='https://placehold.co/100x100/BBBBBB/000000?text=Error';">
+                </div>
+            </div>
+
+            <!-- Product Details -->
+            <div>
+                <h2 class="text-4xl font-extrabold mb-4 text-purple-700">Stylish Gadget Pro</h2>
+                <p class="text-gray-600 text-lg mb-6">
+                    Discover the next generation in portable technology with the Stylish Gadget Pro. Engineered for peak performance and unparalleled elegance, this device seamlessly integrates into your daily life, making every task effortless and enjoyable. Its vibrant display brings your content to life, while the powerful processor handles demanding applications with ease.
+                </p>
+                <p class="text-gray-700 mb-6">
+                    **Key Features:**
+                    <ul class="list-disc list-inside ml-4 mt-2 space-y-2">
+                        <li>Stunning 6.7-inch OLED display with TrueColor technology.</li>
+                        <li>Advanced A15 Bionic chip for lightning-fast performance.</li>
+                        <li>Dual 12MP camera system with Night mode and 4K Dolby Vision HDR recording.</li>
+                        <li>All-day battery life for uninterrupted usage.</li>
+                        <li>IP68 water and dust resistance for ultimate durability.</li>
+                        <li>Face ID for secure authentication and Apple Pay.</li>
+                    </ul>
+                </p>
+                <div class="flex items-center justify-between mb-6">
+                    <span class="text-5xl font-bold text-green-600">$99.99</span>
+                    <button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="mt-8 border-t border-gray-200 pt-6">
+                    <h3 class="text-2xl font-semibold mb-3 text-purple-800">Customer Reviews</h3>
+                    <div class="space-y-4">
+                        <div class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                            <p class="font-semibold text-gray-900">John D. <span class="text-yellow-500">★★★★★</span></p>
+                            <p class="text-gray-700">"Absolutely love this gadget! It's super fast and the camera is incredible. Highly recommend!"</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                            <p class="font-semibold text-gray-900">Jane S. <span class="text-yellow-500">★★★★☆</span></p>
+                            <p class="text-gray-700">"Great device, though the battery could be slightly better for heavy users. Still very happy with my purchase."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (reused from index.html for consistency) -->
+    <footer class="bg-gray-800 text-white p-6 mt-10 rounded-t-lg">
+        <div class="container mx-auto text-center px-4">
+            <p>&copy; 2025 My Awesome Store. All rights reserved.</p>
+            <p class="mt-2">
+                <a href="#" class="text-purple-400 hover:text-purple-300 transition duration-300">Privacy Policy</a> |
+                <a href="#" class="text-purple-400 hover:text-purple-300 transition duration-300">Terms of Service</a>
+            </p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Facebook</a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Instagram</a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
