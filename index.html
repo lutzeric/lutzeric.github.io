@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Awesome Store</title>
+    <title>My Awesome Store - Categories</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts - Inter -->
@@ -24,7 +24,8 @@
             <h1 class="text-3xl font-bold mb-2 sm:mb-0">My Awesome Store</h1>
             <nav>
                 <ul class="flex space-x-4">
-                    <li><a href="#" class="hover:text-purple-200 transition duration-300">Home</a></li>
+                    <li><a href="index.html" class="hover:text-purple-200 transition duration-300">Home</a></li>
+                    <!-- You can add specific links here if you create more top-level pages -->
                     <li><a href="#" class="hover:text-purple-200 transition duration-300">Shop</a></li>
                     <li><a href="#" class="hover:text-purple-200 transition duration-300">About</a></li>
                     <li><a href="#" class="hover:text-purple-200 transition duration-300">Contact</a></li>
@@ -33,140 +34,47 @@
         </div>
     </header>
 
-    <!-- Main Content - Product Grid -->
+    <!-- Main Content - Categories -->
     <main class="container mx-auto my-8 p-4">
-        <h2 class="text-4xl font-extrabold text-center mb-10 text-purple-700">Featured Products</h2>
+        <h2 class="text-4xl font-extrabold text-center mb-10 text-purple-700">Explore Our Categories</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <!-- Product Card 1 -->
-            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden">
-                <!-- Link the entire card to the detail page -->
-                <a href="product1.html" class="block">
-                    <img src="IMG_20250811_111317385.jpg"
-                         alt="Product 1"
-                         class="w-full h-48 object-cover rounded-t-xl"
-                         onerror="this.onerror=null; this.src='https://placehold.co/600x400/CCCCCC/000000?text=Image+Not+Found';">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2 text-purple-800">Stylish Gadget Pro</h3>
-                        <p class="text-gray-600 mb-4 line-clamp-3">
-                            Experience cutting-edge technology with this sleek and powerful gadget. Perfect for work and play.
-                            It boasts a long-lasting battery and an intuitive user interface.
-                        </p>
-                        <div class="flex items-center justify-between">
-                            <span class="text-3xl font-bold text-green-600">$99.99</span>
-                            <button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-full shadow-md transition duration-300 ease-in-out transform hover:scale-105">
-                                View Details
-                            </button>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Product Card 2 -->
-            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden">
-                <img src="https://placehold.co/600x400/FFB380/FFFFFF?text=Product+2"
-                     alt="Product 2"
+            <!-- Category Card: Instrumentos -->
+            <a href="instrumentos.html" class="block bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden transform hover:-translate-y-1">
+                <img src="https://placehold.co/600x400/FFDDC1/8B4513?text=Instrumentos"
+                     alt="Instrumentos Category"
                      class="w-full h-48 object-cover rounded-t-xl"
                      onerror="this.onerror=null; this.src='https://placehold.co/600x400/CCCCCC/000000?text=Image+Not+Found';">
-                <div class="p-6">
-                    <h3 class="text-2xl font-semibold mb-2 text-purple-800">Cozy Comfort Blanket</h3>
-                    <p class="text-gray-600 mb-4 line-clamp-3">
-                        Wrap yourself in ultimate softness with our premium comfort blanket. Ideal for chilly evenings.
-                        Made from 100% organic cotton for a luxurious feel.
-                    </p>
-                    <div class="flex items-center justify-between">
-                        <span class="text-3xl font-bold text-green-600">$45.00</span>
-                        <button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-full shadow-md transition duration-300 ease-in-out transform hover:scale-105">
-                            Add to Cart
-                        </button>
-                    </div>
+                <div class="p-6 text-center">
+                    <h3 class="text-3xl font-bold text-purple-800">Instrumentos</h3>
+                    <p class="text-gray-600 mt-2">Descubre nuestra colección de instrumentos musicales para todos los niveles.</p>
                 </div>
-            </div>
+            </a>
 
-            <!-- Product Card 3 -->
-            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden">
-                <img src="https://placehold.co/600x400/80FFB3/FFFFFF?text=Product+3"
-                     alt="Product 3"
+            <!-- Category Card: Libros -->
+            <a href="libros.html" class="block bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden transform hover:-translate-y-1">
+                <img src="https://placehold.co/600x400/C1FFDD/006400?text=Libros"
+                     alt="Libros Category"
                      class="w-full h-48 object-cover rounded-t-xl"
                      onerror="this.onerror=null; this.src='https://placehold.co/600x400/CCCCCC/000000?text=Image+Not+Found';">
-                <div class="p-6">
-                    <h3 class="text-2xl font-semibold mb-2 text-purple-800">Adventure Backpack</h3>
-                    <p class="text-gray-600 mb-4 line-clamp-3">
-                        Your perfect companion for outdoor adventures. Durable, spacious, and comfortable.
-                        Features multiple compartments and water-resistant material.
-                    </p>
-                    <div class="flex items-center justify-between">
-                        <span class="text-3xl font-bold text-green-600">$79.95</span>
-                        <button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-full shadow-md transition duration-300 ease-in-out transform hover:scale-105">
-                            View Details
-                        </button>
-                    </div>
+                <div class="p-6 text-center">
+                    <h3 class="text-3xl font-bold text-purple-800">Libros</h3>
+                    <p class="text-gray-600 mt-2">Sumérgete en historias y conocimientos con nuestra selección de libros.</p>
                 </div>
-            </div>
+            </a>
 
-            <!-- Product Card 4 -->
-            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden">
-                <img src="https://placehold.co/600x400/B380FF/FFFFFF?text=Product+4"
-                     alt="Product 4"
+            <!-- Category Card: Otros -->
+            <a href="otros.html" class="block bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden transform hover:-translate-y-1">
+                <img src="https://placehold.co/600x400/DDC1FF/4B0082?text=Otros"
+                     alt="Otros Category"
                      class="w-full h-48 object-cover rounded-t-xl"
                      onerror="this.onerror=null; this.src='https://placehold.co/600x400/CCCCCC/000000?text=Image+Not+Found';">
-                <div class="p-6">
-                    <h3 class="text-2xl font-semibold mb-2 text-purple-800">Gourmet Coffee Beans</h3>
-                    <p class="text-gray-600 mb-4 line-clamp-3">
-                        Start your day with the rich aroma of our freshly roasted gourmet coffee beans.
-                        Ethically sourced and perfectly ground for your convenience.
-                    </p>
-                    <div class="flex items-center justify-between">
-                        <span class="text-3xl font-bold text-green-600">$18.50</span>
-                        <button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-full shadow-md transition duration-300 ease-in-out transform hover:scale-105">
-                            Order Now
-                        </button>
-                    </div>
+                <div class="p-6 text-center">
+                    <h3 class="text-3xl font-bold text-purple-800">Otros</h3>
+                    <p class="text-gray-600 mt-2">Explora artículos únicos y variados en nuestra categoría 'Otros'.</p>
                 </div>
-            </div>
-
-            <!-- Product Card 5 -->
-            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden">
-                <img src="https://placehold.co/600x400/FF80B3/FFFFFF?text=Product+5"
-                     alt="Product 5"
-                     class="w-full h-48 object-cover rounded-t-xl"
-                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/CCCCCC/000000?text=Image+Not+Found';">
-                <div class="p-6">
-                    <h3 class="text-2xl font-semibold mb-2 text-purple-800">Handcrafted Ceramic Mug</h3>
-                    <p class="text-gray-600 mb-4 line-clamp-3">
-                        Enjoy your favorite beverage in this unique, handcrafted ceramic mug.
-                        Each mug is individually made, ensuring a one-of-a-kind piece.
-                    </p>
-                    <div class="flex items-center justify-between">
-                        <span class="text-3xl font-bold text-green-600">$22.00</span>
-                        <button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-full shadow-md transition duration-300 ease-in-out transform hover:scale-105">
-                            Add to Cart
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product Card 6 -->
-            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden">
-                <img src="https://placehold.co/600x400/B3FF80/FFFFFF?text=Product+6"
-                     alt="Product 6"
-                     class="w-full h-48 object-cover rounded-t-xl"
-                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/CCCCCC/000000?text=Image+Not+Found';">
-                <div class="p-6">
-                    <h3 class="text-2xl font-semibold mb-2 text-purple-800">Smart Home Assistant</h3>
-                    <p class="text-gray-600 mb-4 line-clamp-3">
-                        Control your home with just your voice. Our smart assistant makes life easier.
-                        Integrates seamlessly with all your smart devices.
-                    </p>
-                    <div class="flex items-center justify-between">
-                        <span class="text-3xl font-bold text-green-600">$129.00</span>
-                        <button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-full shadow-md transition duration-300 ease-in-out transform hover:scale-105">
-                            Learn More
-                        </button>
-                    </div>
-                </div>
-            </div>
+            </a>
 
         </div>
     </main>
@@ -174,10 +82,10 @@
     <!-- Footer -->
     <footer class="bg-gray-800 text-white p-6 mt-10 rounded-t-lg">
         <div class="container mx-auto text-center px-4">
-            <p>&copy; 2025 My Awesome Store. All rights reserved.</p>
+            <p>&copy; 2025 My Awesome Store. Todos los derechos reservados.</p>
             <p class="mt-2">
-                <a href="#" class="text-purple-400 hover:text-purple-300 transition duration-300">Privacy Policy</a> |
-                <a href="#" class="text-purple-400 hover:text-purple-300 transition duration-300">Terms of Service</a>
+                <a href="#" class="text-purple-400 hover:text-purple-300 transition duration-300">Política de Privacidad</a> |
+                <a href="#" class="text-purple-400 hover:text-purple-300 transition duration-300">Términos de Servicio</a>
             </p>
             <div class="flex justify-center space-x-4 mt-4">
                 <a href="#" class="text-gray-400 hover:text-white transition duration-300">Facebook</a>
